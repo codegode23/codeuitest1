@@ -137,7 +137,7 @@ section{
     border-radius: 20px;
     padding: 10px;
     border: none;
-    background-color: rgb(177, 204, 165);
+    background-color: rgb(231, 240, 227);
     color: var(--primary-color);
     outline: none;
   }
@@ -162,7 +162,7 @@ section{
     max-width: 35px;
     padding: 8px;
     border-radius: 6px;
-    background-color: #a8a8a8;
+    background-color: #f5f1f1;
     margin-left: 20%;
   }
 
@@ -423,6 +423,7 @@ gap: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 5%;
 }
 
 .forms-area .left-form label,
@@ -457,6 +458,7 @@ gap: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
   }
 
 .forms-area .right-form textarea {
@@ -466,6 +468,31 @@ gap: 10px;
     resize: none;
     font-size: 12px;
   }
+
+  .forms-area .right-form .buttons{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.buttons a{
+    text-decoration: none;
+    border: .5px solid rgb(137, 228, 137);
+    padding: 5px 20px 5px 20px;
+    color: var(--secondary-color);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.buttons a:hover{
+    color: #fff;
+    font-size: 12px;
+    background-color: var(--primary-color);
+}
 
 
   @media screen and (max-width: 760px) {
@@ -516,6 +543,17 @@ gap: 10px;
 
   }
 
+  
+  @media screen and (max-width: 648px) {
+    .buttons a{
+        text-decoration: none;
+        border: .5px solid rgb(137, 228, 137);
+        padding: 5px 10px 5px 10px;
+        color: var(--secondary-color);
+        font-size: 10px;
+        border-radius: 5px;
+    }
+  }
 
   @media screen and (max-width: 580px) {
     .bottom{
@@ -566,6 +604,13 @@ gap: 10px;
 /* .forms-area .left-form select{
     width: 170%;
 } */
+
+
+.forms-area .right-form{
+    position: relative;
+}
+
+
 
   }
 
